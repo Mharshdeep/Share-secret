@@ -29,7 +29,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://localhost:27017/usersDB" , {useNewUrlParser : true , autoIndex: false});
+mongoose.connect("mongodb+srv://ShareAdmin:test123@sharecluster-lvsjx.mongodb.net/usersDB" , {useNewUrlParser : true , autoIndex: false,useUnifiedTopology: true});
 mongoose.set("useCreateIndex",true);
 const userSchema = new mongoose.Schema({
   email: String,
