@@ -208,7 +208,7 @@ if(err){
   });
 
 let port = process.env.PORT;
-if (port== "" || or port == null){
+if (port== "" ||  port == null){
   port = 3000;
 }
 app.listen(port, function() {
